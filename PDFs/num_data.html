@@ -1,0 +1,580 @@
+
+<!-- saved from url=(0191)https://p.cygnus.cc.kuleuven.be/bbcswebdav/pid-22303589-dt-content-rid-175860482_2/courses/B-KUL-H01N1a-1819/Assignments/Assignment%202%20%20Nokken%20%28Cams%29/numerieke%20data/num_data.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script>(function n(){!function(){function e(e,t,n){t=t||{};var r=e.ownerDocument||e,i=r.createEvent?r.createEvent("CustomEvent"):r.createEventObject();i.initCustomEvent&&i.initCustomEvent(t.type,!!t.bubbles,!!t.cancelable,t.detail);for(var a in t)i[a]=t[a];return setTimeout(function(){try{e.dispatchEvent?e.dispatchEvent(i):e.fireEvent("on"+t.type,r.createEventObject())}catch(n){var a=e["listen"+t.type];if(a)for(var o=0;o<a.length;++o)try{a[o].call(e,i)}catch(e){}}n()},0),this}function t(e,t,n){function r(e,t){try{var n=e.ownerDocument;if(n.createEventObject){var r=n.createEventObject();e.fireEvent("on"+t,r)}else r=n.createEvent("HTMLEvents"),r.initEvent(t,!0,!0),e.dispatchEvent(r)}catch(e){}}var i=!0,a=e.className&&e.className.indexOf("fancified")!=-1;if(window.jQuery){var o=window.jQuery(e);try{if(o.selectBoxIt)o.selectBoxIt("selectOption",o.val());else if(o.data("chosen")||o.chosen)o.trigger("chosen:updated").trigger("liszt:updated");else if(o.data("chooserElement"))o.trigger("change");else if(o.fancySelect)o.get("fancySelect").select("value",o.val());else if(o.selectBox)o.selectBox("value",o.val());else if(o.selectric)o.selectric("refresh");else if(o.coreUISelect){var s=o.data("coreUISelect");s.isSelectShow=!0,s.changeDropdownData(),s.isSelectShow=!1}else if(o.data("myJSPulldownObject")){var l=o.data("myJSPulldownObject");l.setToValue(o.val())}else if(o.fancyfields)o.setVal(o.val());else if(o.data("select2"));else if(o.data("selectize"))i=!1,o.data("selectize").setValue(o.val());else if(o.hasClass("fancified"))o.trigger("update");else if(o.selectmenu){var c=o.val();try{o.selectmenu("value",o[0].options[0].value)}catch(e){}o.selectmenu("value",c)}else o.hasClass("select-hidden")&&o.next("div.select-styled").length&&o.next("div.select-styled").next(".select-options").length&&(ulElement=o.next("div.select-styled").next(".select-options"),liElement=ulElement.find("li[rel='"+o.val()+"']"),liElement.click());o.trigger("change")}catch(e){}}i&&(a&&r(e,"update"),r(e,"change"),r(e,"blur")),n()}function n(t,n,r,i){var a=t.value;e(t,{type:"keydown",keyCode:n,which:n,charCode:n,bubbles:!0},function(){e(t,{type:"keypress",keyCode:n,which:n,charCode:n,bubbles:!0},function(){setTimeout(function(){var o=t.value;a==o&&(t.value=r),e(t,{type:"input",keyCode:n,which:n,charCode:n,bubbles:!0},function(){e(t,{type:"keyup",keyCode:n,which:n,charCode:n,bubbles:!0},function(){i()})})},1)})})}function r(e,t,i,a){if(!t||""==t)return void a();var o=t.charCodeAt(0);i+=t.charAt(0),n(e,o,i,function(){r(e,t.substring(1),i,a)})}function i(t,n,r){if(window.abineTriggerChangeInProgress)return void setTimeout(function(){i(t,n,r)},100);var a=!0;window.abineTriggerChangeInProgress=!0;try{if(window.jQuery){var o=window.jQuery(t);o.data("rawMaskFn")||o.mask||o.CardPhoneFormatting?o.focus().val(n).trigger("input").trigger("paste"):o.next(".inner").find(".options").length&&(a=!1,optionsContainer=o.next(".inner").find(".options"),optionElements=optionsContainer.find("span"),optionElements.each(function(){optionElement=$(this),optionElementHtml=$(optionElement).html(),optionElementHtml.toLowerCase().indexOf(n)>-1&&$(optionElement).click()}))}}catch(e){}a?e(t,{type:"change"},function(){e(t,{type:"blur"},function(){try{var e=new Event("input",{bubbles:!0,cancelable:!0});t.dispatchEvent(e)}catch(e){}window.abineTriggerChangeInProgress=!1,r()})}):(window.abineTriggerChangeInProgress=!1,r())}function a(t,n,a){try{t.ownerDocument.defaultView.focus()}catch(e){}e(t,{type:"focus"},function(){e(t,{type:"click"},function(){r(t,n+"\n","",function(){i(t,n,function(){e(document,{type:"abineFilled"},function(){a()})})})})})}function o(n,r,i,a){var o=/[\s]+/g,s=(r||"").toLowerCase().replace(o,""),l=function(){e(document,{type:"abineFilled"},function(){a()})},c=!1,u=!1,d=n.getElementsByTagName("option");if(d&&d.length>0){for(var h=-1,f=0;f<d.length;f++){var p=(d[f].text||"").toLowerCase().replace(o,""),m=(d[f].getAttribute("value")||"").toLowerCase().replace(o,"");if(m==s||p==s){d[f].selected||(c=!0,d[f].selected=!0),u=!0;break}h==-1&&p.indexOf(s)!=-1&&(h=f)}u||h==-1||i||d[h].selected||(c=!0,d[h].selected=!0,u=!0)}n.setAttribute("abineFillResponse",u),c?t(n,r,l):l()}function s(){var e=document.getElementsByClassName("abineFillTarget");if(e.length>0)return e[0];for(var t=0;t<frames.length;t++)try{var e=frames[t].document.getElementsByClassName("abineFillTarget");if(e.length>0)return e[0]}catch(e){}return null}function l(){var n=document.createElement("div");n.id="abineFillElement","undefined"!=typeof paypal&&n.setAttribute("data-paypal","1"),"undefined"!=typeof OffAmazonPayments&&n.setAttribute("data-amazon","1"),"undefined"!=typeof MasterPass&&n.setAttribute("data-masterpass","1"),document.documentElement.appendChild(n),n.addEventListener("fill",function(){var t=s();if(t){var r=n.getAttribute("value");a(t,r,function(){})}else e(document,{type:"abineFilled"},function(){})},!1),n.addEventListener("fillSelect",function(){var t=s();if(t){var r=n.getAttribute("value"),i=!!n.getAttribute("skipPartial");o(t,r,i,function(){})}else e(document,{type:"abineFilled"},function(){})}),n.addEventListener("triggerChange",function(){var e=s(),r=n.getAttribute("value");e&&(e.nodeName.match(/select/i)?t(e,r,function(){}):i(e,r,function(){}))})}l()}()})()</script></head><body>
+<ol>
+<li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+
+
+	<li>van 0° tot 120° : +25 mm
+
+	</li><li>van 120° tot 200° : -10 mm
+	</li><li>van 200° tot 270° : -15 mm
+
+</li></ul><p>De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 5 kg en 0.058, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 0°+ tot 120° : een lineair toenemende drukkracht van 0 N tot 60 N
+	</li><li>van 120° tot 200° : een konstante trek-kracht van 25 N
+	</li><li>van 200° tot 360° : zijn er geen statische krachten meer werkzaam
+
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 900 (rad/sec).-->
+
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.2 sec.
+
+
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 100° : +40 mm
+	</li><li>van 100° tot 170° : -30 mm
+	</li><li>van 170° tot 210° : -10 mm
+</li></ul><p>De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 10 kg en 0.09, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 10° tot 70° : een konstante druk-kracht van 25 N
+	</li><li>van 100° tot 170° : een konstante trek-kracht van 50 N
+	</li><li>van 170° tot 210° : een lineair afnemende trek-kracht van 50 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 300 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 1 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 100° : +10 mm
+	</li><li>van 145° tot 270° : +20 mm
+	</li><li>van 270° tot 340° : -30 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 150 kg en 0.066, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 145° tot 265° : een konstante druk-kracht van 60 N
+	</li><li>van 265° tot 270° : een konstante druk-kracht van 100 N
+	</li><li>van 270° tot 300° : een lineair afnemende trek-kracht van 20 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 75 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 3 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 30° tot 120° : +45 mm
+	</li><li>van 160° tot 245° : -30 mm
+	</li><li>van 265° tot 330° : -15 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 20 kg en 0.077, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 200° tot 245° : een lineair toenemende trek-kracht van 0 N tot 260 N
+	</li><li>van 245° tot 300° : een konstante trek-kracht van 260 N
+	</li><li>van 300° tot 330° : een lineair afnemende trek-kracht van 260 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 500 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 25° tot 90° : +30 mm
+	</li><li>van 110° tot 165° : -20 mm
+	</li><li>van 180° tot 220° : -10 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op  18 kg en 0.058, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 25° tot 90° : een konstante druk-kracht van 160 N
+	</li><li>van 130° tot 140° : een lineair afnemende druk-kracht van 60 N tot -140 N
+	</li><li>van 180° tot 220° : een konstante trek-kracht van 140 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 150 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 2 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 45° : +5 mm
+	</li><li>van 45° tot 120° : +20 mm
+	</li><li>van 140° tot 210° : -25 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 25 kg en 0.08, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 100° : een konstante druk-kracht van 100 N
+	</li><li>van 100° tot 120° : een konstante druk-kracht van 230 N
+	</li><li>van 180° tot 210° : een konstante trek-kracht van 120 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 150 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 2 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 25° tot 75° : +20 mm
+	</li><li>van 75° tot 150° : +30 mm
+	</li><li>van 150° tot 220° : -50 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 10 kg en 0.063, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 75° tot 100° : een konstante druk-kracht van 900 N
+	</li><li>van 100° tot 150° : een lineair afnemende druk-kracht van 900 N tot -450 N
+	</li><li>van 150° tot 210° : een konstante trek-kracht van 450 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 700 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.25 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 100° : +10 mm
+	</li><li>van 200° tot 250° : +30 mm
+	</li><li>van 270° tot 360° : -40 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 38 kg en 0.083, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 80° tot 210° : een lineair toenemende druk-kracht van 0 N tot +300N
+	</li><li>van 210° tot 270° : een konstante druk-kracht van 500 N
+	</li><li>van 270° tot 310° : een lineair afnemende trekkracht van 400 N tot 0N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 220 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 1 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 100° : +30 mm
+	</li><li>van 180° tot 210° : -10 mm
+	</li><li>van 210° tot 260° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 12.5 kg en 0.085, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 180° : een konstante druk-kracht van 350 N
+	</li><li>van 180° tot 215° : een konstante trek-kracht van 60 N
+	</li><li>van 215° tot 240° : een lineair afnemende trek-kracht van 250 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 750 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.3 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 10° tot 100° : +25 mm
+	</li><li>van 180° tot 210° : -10 mm
+	</li><li>van 210° tot 280° : -15 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 0.15 kg en 0.088, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 10° tot 190° : een konstante druk-kracht van 330 N
+	</li><li>van 190° tot 210° : een konstante trek-kracht van 650 N
+	</li><li>van 210° tot 250° : een lineair afnemende trek-kracht van 330 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 1300 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.05 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 60° : +20 mm
+	</li><li>van 60° tot 120° : +10 mm
+	</li><li>van 150° tot 290° : -30 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 25 kg en 0.073, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 60° tot 110° : een lineair toenemende druk-kracht van 0 N tot 165 N
+	</li><li>van 110° tot 160° : een konstante druk-kracht van 165 N
+	</li><li>van 160° tot 250° : een konstante trek-kracht van 230 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 150 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 2 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 30° tot 60° : +5 mm
+	</li><li>van 100° tot 200° : +15 mm
+	</li><li>van 220° tot 300° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 30 kg en 0.054, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 30° tot 110° : een konstante druk-kracht van 450 N
+	</li><li>van 110° tot 190° : een konstante druk-kracht van 950 N
+	</li><li>van 230° tot 300° : een lineair afnemende trek-kracht van 300 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 350 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 120° : +30 mm
+	</li><li>van 150° tot 200° : -15 mm
+	</li><li>van 220° tot 280° : -15 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 25 kg en 0.061, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 0° tot 120° : een lineair toenemende druk-kracht van 0N tot 350 N
+	</li><li>van 120° tot 160° : een konstante trek-kracht van 350 N
+	</li><li>van 160° tot 200° : een konstante trek-kracht van 240 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 250 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 30° : +5 mm
+	</li><li>van 30° tot 120° : +15 mm
+	</li><li>van 120° tot 300° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 20 kg en 0.096, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 10° tot 100° : een konstante druk-kracht van 250 N
+	</li><li>van 100° tot 200° : een konstante trek-kracht van 450 N
+	</li><li>van 200° tot 300° : een lineair afnemende trek-kracht van 300 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 185 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 1 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 30° tot 200° : +50 mm
+	</li><li>van 210° tot 270° : -30 mm
+	</li><li>van 270° tot 325° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 22 kg en 0.058, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 30° tot 100° : een lineair toenemende druk-kracht van 0 N tot 65 N
+	</li><li>van 110° tot 210° : een konstante druk-kracht van 220 N
+	</li><li>van 210° tot 300° : een lineair afnemende trek-kracht van 220 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 225 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 1 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 100° : +20 mm
+	</li><li>van 100° tot 150° : +5 mm
+	</li><li>van 170° tot 250° : -25 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 25 kg en 0.091, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 100° : een konstante druk-kracht van 355 N
+	</li><li>van 100° tot 140° : een konstante druk-kracht van 250 N
+	</li><li>van 140° tot 250° : een lineair toenemende trek-kracht van 0 N tot 290 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 200 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 1 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 45° : +5 mm
+	</li><li>van 45° tot 120° : +10 mm
+	</li><li>van 120° tot 215° : -15 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 19 kg en 0.077, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 100° : een konstante druk-kracht van 245 N
+	</li><li>van 100° tot 140° : een lineair afnemende druk-kracht van 245 N tot 85 N
+	</li><li>van 140° tot 360° : geen kracht
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 90 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 2 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 120° : +15 mm
+	</li><li>van 120° tot 180° : +15 mm
+	</li><li>van 200° tot 280° : -30 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 18 kg en 0.1, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 120° : een lineair toenemende druk-kracht van 0 tot 300 N
+	</li><li>van 120° tot 170° : een konstante druk-kracht van 550 N
+	</li><li>van 170° tot 240° : een konstante trek-kracht van 300 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 130 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 2 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 30° tot 120° : +40 mm
+	</li><li>van 180° tot 240° : -20 mm
+	</li><li>van 250° tot 330° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 15 kg en 0.054, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 30° tot 180° : een konstante druk-kracht van 95 N
+	</li><li>van 180° tot 240° : een konstante trek-kracht van 20 N
+	</li><li>van 240° tot 300° : een lineair afnemende trek-kracht van 20 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 75 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 2 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 50° : +10 mm
+	</li><li>van 60° tot 120° : +10 mm
+	</li><li>van 120° tot 230° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 12 kg en 0.072, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 0° tot 80° : een lineair toenemende druk-kracht van 0 N tot 750 N
+	</li><li>van 80° tot 120° : een konstante druk-kracht van 950 N
+	</li><li>van 120° tot 180° : een lineair afnemende trek-kracht van 230 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 680 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.3 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 90° : +5 mm
+	</li><li>van 90° tot 180° : +15 mm
+	</li><li>van 180° tot 305° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 15 kg en 0.055, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 90° : een konstante druk-kracht van 250 N
+	</li><li>van 90° tot 180° : een lineair toenemende druk-kracht van 250 N tot 1050 N
+	</li><li>van 180° tot 250° : een konstante trek-kracht van 300 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 585 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.3 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 100° : +5 mm
+	</li><li>van 100° tot 150° : +15 mm
+	</li><li>van 150° tot 230° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 18 kg en 0.098, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 90° : een konstante druk-kracht van 510 N
+	</li><li>van 90° tot 140° : een konstante druk-kracht van 450 N
+	</li><li>van 140° tot 200° : een lineair afnemende trek-kracht van 450 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 700 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.3 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 90° : +10 mm
+	</li><li>van 90° tot 150° : +20 mm
+	</li><li>van 150° tot 255° : -30 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 21 kg en 0.05, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 90° : een lineair toenemende druk-kracht van 0 N tot 750 N
+	</li><li>van 90° tot 150° : een konstante druk-kracht van 950 N
+	</li><li>van 150° tot 200° : een konstante trek-kracht van 300 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 440 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 75° : +15 mm
+	</li><li>van 80° tot 180° : +25 mm
+	</li><li>van 180° tot 340° : -40 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 25 kg en 0.089, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 0° tot 120° : een konstante druk-kracht van 800 N
+	</li><li>van 120° tot 180° : een konstante druk-kracht van 100 N
+	</li><li>van 180° tot 240° : een lineair afnemende trek-kracht van 1100 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 475 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 120° : +10 mm
+	</li><li>van 120° tot 180° : +30 mm
+	</li><li>van 200° tot 240° : -40 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 20 kg en 0.091, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 0° tot 120° : een lineair toenemende druk-kracht van 0 N tot 500 N
+	</li><li>van 120° tot 170° : een konstante druk-kracht van 200 N
+	</li><li>van 200° tot 240° : een konstante trek-kracht van 150 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 400 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 10° tot 65° : +10 mm
+	</li><li>van 95° tot 210° : +40 mm
+	</li><li>van 210° tot 350° : -50 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 29 kg en 0.094, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 10° tot 120° : een lineair toenemende druk-kracht van 0 N tot 1250 N
+	</li><li>van 120° tot 170° : een konstante druk-kracht van 1250 N
+	</li><li>van 170° tot 270° : een konstante trek-kracht van 480 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 590 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 10° tot 100° : +20 mm
+	</li><li>van 100° tot 180° : +15 mm
+	</li><li>van 180° tot 260° : -35 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 31 kg en 0.054, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 10° tot 100° : een konstante druk-kracht van 750 N
+	</li><li>van 100° tot 180° : een konstante druk-kracht van 1100 N
+	</li><li>van 180° tot 230° : een lineair afnemende trek-kracht van 450 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 940 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.2 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 20° tot 90° : +25 mm
+	</li><li>van 90° tot 155° : -15 mm
+	</li><li>van 165° tot 200° : -10 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 30 kg en 0.07, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 30° tot 90° : een lineair toenemende druk-kracht van 0 N tot 550 N
+	</li><li>van 90° tot 135° : een konstante trek-kracht van 250 N
+	</li><li>van 135° tot 180° : een konstante trek-kracht van 295 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 250 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 1 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 20° tot 90° : +30 mm
+	</li><li>van 90° tot 160° : -10 mm
+	</li><li>van 160° tot 180° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 25 kg en 0.063 terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 30° tot 90° : een konstante druk-kracht van 340 N
+	</li><li>van 90° tot 150° : een lineair toenemende trek-kracht van 340 N tot 510 N
+	</li><li>van 150° tot 180° : een lineair afnemende trek-kracht van 230 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 185 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 2 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 80° : +10 mm
+	</li><li>van 90° tot 130° : +15 mm
+	</li><li>van 130° tot 180° : -25 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 21 kg en 0.09, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 100° tot 130° : een lineair toenemende druk-kracht van 0 N tot 700 N
+	</li><li>van 130° tot 170° : een konstante trek-kracht van 350 N
+	</li><li>van 170° tot 360° : geen krachten werkzaam
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 205 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 1 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 90° : +30 mm
+	</li><li>van 90° tot 120° : +5 mm
+	</li><li>van 120° tot 195° : -35 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 20 kg en 0.072, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 90° : een lineair toenemende druk-kracht van 0 N tot 45 N
+	</li><li>van 90° tot 120° : een konstante druk-kracht van 105 N
+	</li><li>van 120° tot 180° : een konstante trek-kracht van 50 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 120 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 3 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 100° : +40 mm
+	</li><li>van 100° tot 150° : -20 mm
+	</li><li>van 160° tot 245° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 1.8 kg en 0.096, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 0° tot 100° : een konstante druk-kracht van 550 N
+	</li><li>van 100° tot 120° : een lineair afnemende trek-kracht van 550 N tot 350 N
+	</li><li>van 120° tot 180° : een konstante trek-kracht van 245 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 1650 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.1 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 60° : +20 mm
+	</li><li>van 60° tot 180° : +15 mm
+	</li><li>van 180° tot 255° : -35 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 15 kg en 0.059, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 0° tot 60°: een lineair toenemende druk-kracht van 0 N tot 750 N
+	</li><li>van 60° tot 180° : een konstante druk-kracht van 1150 N
+	</li><li>van 180° tot 210°° : een lineair afnemende trek-kracht van 380 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 1300 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.2 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 15° tot 60° : +25 mm
+	</li><li>van 60° tot 120° : -10 mm
+	</li><li>van 160° tot 200° : -15 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 10 kg en 0.063, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 30°tot 60° : een konstante druk-kracht van 465 N
+	</li><li>van 60° tot 110° : een lineair afnemende trek-kracht van 465 N tot 350 N
+	</li><li>van 110° tot 180° : een konstante trek-kracht van 350 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 500 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 30° tot 90° : +25 mm
+	</li><li>van 90° tot 180° : +10 mm
+	</li><li>van 180° tot 270° : -35 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 25 kg en 0.057, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 30° tot 90° : een konstante druk-kracht van 350 N
+	</li><li>van 90° tot 180° : een lineair toenemende druk-kracht van 350 N tot 950 N
+	</li><li>van 180° tot 270° : een konstante trek-kracht van 250 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 450 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 10° tot 45° : +10 mm
+	</li><li>van 45° tot 120° : +30 mm
+	</li><li>van 120° tot 220° : -40 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 120 kg en 0.057, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 100° : een lineair toenemende druk-kracht van 0 N tot 450 N
+	</li><li>van 100° tot 120° : een konstante druk-kracht van 600 N
+	</li><li>van 120° tot 180° : een lineair afnemende trek-kracht van 200 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 75 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 5 sec.
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 10° tot 70° : +25 mm
+	</li><li>van 95° tot 160° : -10 mm
+	</li><li>van 180° tot 225° : -15 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 2 kg en 0.094, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 10° tot 60° : een lineair toenemende druk-kracht van 0 N tot 245 N
+	</li><li>van 60° tot 180° : een konstante trek-kracht van 200 N
+	</li><li>van 180° tot 225° : een lineair toenemende trek-kracht van 200 N tot 380 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 1200 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.2 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 20° tot 120° : +25 mm
+	</li><li>van 120° tot 180° : +15 mm
+	</li><li>van 180° tot 270° : -40 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 19 kg en 0.079, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 20° tot 120° : een konstante druk-kracht van 300 N
+	</li><li>van 120° tot 180° : een lineair afnemende druk-kracht van 300 N tot 0 N
+	</li><li>van 180° tot 270° : een konstante trek-kracht van 255 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 550 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.3 sec.
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 20° tot 90° : +30 mm
+	</li><li>van 90° tot 120° : -15 mm
+	</li><li>van 200° tot 245° : -15 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 18 kg en 0.078, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 20° tot 90° : een lineair toenemende druk-kracht van 0 N tot 375 N
+	</li><li>van 90° tot 110° : een lineair afnemende trek-kracht van 375 N tot 75 N
+	</li><li>van 210° tot 235° : een konstante trek-kracht van 340 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 550 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+
+
+
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 60° tot 150° : +30 mm
+	</li><li>van 150° tot 200° : -10 mm
+	</li><li>van 200° tot 270° : -20 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 25 kg en 0.057, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 90°tot 150° : een lineair toenemende druk-kracht van 0 tot 245 N
+	</li><li>van 150° tot 200° : een konstante trek-kracht van 405 N
+	</li><li>van 200° tot 270° : een lineair afnemende trek-kracht van 235 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 115 (rad/sec).-->
+
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 2 sec.
+
+
+
+
+
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 45° : +8 mm
+	</li><li>van 45° tot 120° : +22 mm
+	</li><li>van 140° tot 210° : -30 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 25 kg en 0.093, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 100° : een konstante druk-kracht van 80 N
+	</li><li>van 100° tot 120° : een konstante druk-kracht van 1200 N
+	</li><li>van 180° tot 210° : een konstante trek-kracht van 70 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 125 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 4 sec.
+
+
+
+
+
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 25° tot 75° : +10 mm
+	</li><li>van 75° tot 150° : +20 mm
+	</li><li>van 150° tot 220° : -30 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 7 kg en 0.081, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 75° tot 100° : een konstante druk-kracht van 300 N
+	</li><li>van 100° tot 150° : een lineair afnemende druk-kracht van 200 N tot -150 N
+	</li><li>van 150° tot 210° : een konstante trek-kracht van 250 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 600 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.50 sec.
+
+
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 100° : +15 mm
+	</li><li>van 200° tot 250° : +25 mm
+	</li><li>van 270° tot 360° : -40 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 25 kg en 0.068, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 80° tot 210° : een lineair toenemende druk-kracht van -50 N tot +200N
+	</li><li>van 210° tot 270° : een konstante druk-kracht van 250 N
+	</li><li>van 270° tot 310° : een lineair afnemende trekkracht van 500 N tot 0N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 220 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 2 sec.
+
+
+
+
+
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 100° : +40 mm
+	</li><li>van 180° tot 210° : -15 mm
+	</li><li>van 210° tot 260° : -25 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 15 kg en 0.076, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 45° tot 180° : een konstante druk-kracht van 400 N
+	</li><li>van 180° tot 215° : een konstante trek-kracht van 160 N
+	</li><li>van 215° tot 240° : een lineair afnemende trek-kracht van 200 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 750 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.5 sec.
+
+
+
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 10° tot 100° : +35 mm
+	</li><li>van 180° tot 210° : -20 mm
+	</li><li>van 210° tot 280° : -15 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 0.40 kg en 0.07, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 10° tot 190° : een konstante druk-kracht van 230 N
+	</li><li>van 190° tot 210° : een konstante trek-kracht van 550 N
+	</li><li>van 210° tot 250° : een lineair afnemende trek-kracht van 300 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 1300 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.05 sec.
+
+
+
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 60° : +20 mm
+	</li><li>van 60° tot 120° : +15 mm
+	</li><li>van 150° tot 290° : -35 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 20 kg en 0.054, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 60° tot 110° : een lineair toenemende druk-kracht van 0 N tot 150 N
+	</li><li>van 110° tot 160° : een konstante druk-kracht van 250 N
+	</li><li>van 160° tot 250° : een konstante trek-kracht van 230 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 150 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 1 sec.
+
+
+<i><u></u></i></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 0° tot 120° : +40 mm
+	</li><li>van 150° tot 200° : -15 mm
+	</li><li>van 220° tot 280° : -25 mm
+</li></ul><p> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 15 kg en 0.062, terwijl het mechanisme volgende statische krachten moet uitoefenen:</p><ul>
+	<li>van 0° tot 120° : een lineair toenemende druk-kracht van 0N tot 250 N
+	</li><li>van 120° tot 160° : een konstante druk-kracht van 150 N
+	</li><li>van 160° tot 200° : een konstante trek-kracht van 400 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 250 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.25 sec.
+
+
+</li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende heffing kunnen realiseren :</p><ul>
+	<li>van 45° tot 100° : +15 mm
+	</li><li>van 145° tot 270° : +20 mm
+	</li><li>van 270° tot 340° : -35 mm
+</li></ul> De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 100 kg en 0.056, terwijl het mechanisme volgende statische krachten moet uitoefenen:<ul>
+	<li>van 145° tot 265° : een konstante druk-kracht van 40 N
+	</li><li>van 265° tot 270° : een konstante druk-kracht van 120 N
+	</li><li>van 270° tot 300° : een lineair afnemende trek-kracht van 20 N tot 0 N
+</li></ul><!--<p>De laagste eigenfrequentie van het volgersysteem (w<sub>n</sub>) bedraagt 90 (rad/sec).-->
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 2 sec.</li>
+
+
+<li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende
+	heffing kunnen realiseren : zie opgave 13. De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 12 kg en 0.059, terwijl het mechanisme volgende statische krachten
+	moet uitoefenen: zie opgave 24.
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.50 sec.
+
+
+</p></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende
+	heffing kunnen realiseren : zie opgave 26. De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 5 kg en 0.062, terwijl het mechanisme volgende statische krachten
+	moet uitoefenen: zie opgave 12.
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.10 sec.
+
+
+</p></li><li><p><i><u>Gegevens :</u></i>	De te ontwerpen nok moet volgende
+	heffing kunnen realiseren : zie opgave 23. De equivalente massa en dempingsconstante van de volger (en bijhorende onderdelen) worden respectievelijk geschat op 13 kg en 0.071, terwijl het mechanisme volgende statische krachten
+	moet uitoefenen: zie opgave 17.
+De gevraagde cyclustijd voor de bewerking uitgevoerd door de volger is 0.25 sec.
+
+
+
+</p></li></ol>
+
+
+</body><auto-scroll></auto-scroll><div id="abineFillElement"></div></html>
