@@ -35,8 +35,8 @@ k_f = 2*pi*m*.75/t_1/dzeta -k_s
 
 theta = cam.S;
 theta_dot  = cam.V;
-t= 0:0.001:t_1; % in seconden
-tau =  0:(1/1600):10;%t/t_1;  %
+t= 0:0.001:t_1+0.8889; % in seconden
+tau =  0:0.001:16;%t/t_1;  %
 
 A_max = Q/(2*pi*lambda)^N
 
@@ -49,6 +49,15 @@ sys = tf(teller, noemer);
 theta_3 = theta(200e2:360e2);
 theta_init = [theta(200e2) theta_dot(200e2)];
 lsim(sys,theta_3/30-1,tau, theta_init)
+y = lsim(sys,theta_3/30-1,tau, theta_init);
+y_dot = diff(y');
+y_dot_dot = diff(y',2);
+figure()
+plot(y_dot)
+title("y_{dot}")
+figure()
+plot(y_dot_dot)
+title("y_{dotdot}")
 
 
 
