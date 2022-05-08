@@ -36,7 +36,7 @@ k_f = 2*pi*m*.75/t_1/dzeta -k_s
 theta = cam.S;
 theta_dot  = cam.V;
 t= 0:0.001:t_1; % in seconden
-tau =  0:(1/8000):1;%t/t_1;  %
+tau =  0:(1/800):10;%t/t_1;  %
 
 A_max = Q/(2*pi*lambda)^N
 
