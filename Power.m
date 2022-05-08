@@ -20,10 +20,10 @@ R = X + R0;
 R_no_exc = sqrt(out.xpitch.^2 + out.ypitch.^2)*10^(-3);
 P_e0 = N_tot.*sin(alpha).*R.*omega;
 P_e02 = N_tot.*sin(alpha).*R_no_exc.*omega;
-figure()
-plot(P_e0)
-figure()
-plot(P_e02)
+%figure()
+%plot(P_e0)
+%figure()
+%plot(P_e02)
 test = load('Geometrie_e.mat');
 
 Xe = test.S*10^-3;
@@ -43,17 +43,28 @@ R0e = bcre + rofe;
 R_no_exc = sqrt(test.xpitch.^2 + test.ypitch.^2);%*10^(-3);
 
 P_e = N_tote.*(e*cos(alphae)+sin(alphae).*(sqrt(R0e^2-e^2)+Xe))*omega;
-P_av2 = mean(P_e);
+P_av2 = mean(P_e)
 figure()
 plot(P_e)
+title("P_e")
 
 
 M = P_e/omega;
-M_av = P_av2 ./ test.w;
+M_av = P_av2 ./ test.w
 M_delta = M_av - M;
-A = cumtrapz(test.theta, M_delta);
-
+A = cumtrapz(test.theta, [M_delta(17001:end),M_delta(1:17001-1)]);
+A_max = max(A);
 figure()
-plot(M)
+plot(M,'b', "linewidth",2)
+hold on
+%plot(M_av*ones(size(M)),'r', "linewidth",2)
+plot([M_delta(17001:end),M_delta(1:17001-1)],'r', "linewidth",2)
+
+legend('instantaneous Torque','avarage Torque')
+xlabel("cam angle (degree)")
+ylabel("torque (Nm)")
 figure()
 plot(A)
+hold on
+plot(360e2-170e2+63e2,A_max,'ro','linewidth',2)
+title("A")
