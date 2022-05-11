@@ -67,6 +67,9 @@ rho_min_beta = rho_min(beta_test*10);
 
 figure;
 plot(beta_vec, rho_min);
+hold on
+plot(beta_test, rho_min(beta_test*10),'ro');
+hold off
 grid
 xlabel('beta (degrees)')
 ylabel('rho_{min} (mm)')
