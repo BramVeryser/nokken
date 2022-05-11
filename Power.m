@@ -17,13 +17,11 @@ rof = out.rof*10^-3;
 
 R0 = bcr + rof;
 R = X + R0;
-R_no_exc = sqrt(out.xpitch.^2 + out.ypitch.^2)*10^(-3);
 P_e0 = N_tot.*sin(alpha).*R.*omega;
-P_e02 = N_tot.*sin(alpha).*R_no_exc.*omega;
 figure()
 plot(P_e0)
-figure()
-plot(P_e02)
+
+
 test = load('Geometrie_e.mat');
 
 Xe = test.S*10^-3;

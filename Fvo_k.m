@@ -1,6 +1,6 @@
 clear; close all; clc
 
-out = load('Geometrie.mat');
+out = load('Geometrie_e.mat');
 
 X = out.S;
 V = out.V;
