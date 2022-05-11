@@ -18,18 +18,15 @@ rof = out.rof*10^-3;
 R0 = bcr + rof;
 R = X + R0;
 P_e0 = N_tot.*sin(alpha).*R.*omega;
-<<<<<<< HEAD
 figure()
 plot(P_e0)
 
 
-=======
-P_e02 = N_tot.*sin(alpha).*R_no_exc.*omega;
+P_e02 = N_tot.*sin(alpha).*R.*omega;
 %figure()
 %plot(P_e0)
 %figure()
 %plot(P_e02)
->>>>>>> 6bf8c7dd59bed6792bb0e5e9770ec59e2ed19227
 test = load('Geometrie_e.mat');
 
 Xe = test.S*10^-3;
