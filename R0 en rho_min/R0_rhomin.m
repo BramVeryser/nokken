@@ -1,4 +1,5 @@
 clear; close all; clc
+
 %% 0-45  (A)
 
 beta_A = 45; %[degree]
@@ -55,7 +56,7 @@ R0_exact = max([R0_A,R0_B,R0_C,R0_D,R0_E,R0_F])
 
 R0_afgerond = R0_exact + 3.7  %afgerond naar 60
 
-rho_min_A = gen_fig_Kloomok_Muffley_2(R0_afgerond,	,start_lift_A,end_lift_A,motionlaw_A);
+rho_min_A = gen_fig_Kloomok_Muffley_2(R0_afgerond,beta_A	,start_lift_A,end_lift_A,motionlaw_A);
 rho_min_B = gen_fig_Kloomok_Muffley_2(R0_afgerond,beta_B,start_lift_B,end_lift_B,motionlaw_B);
 rho_min_C = gen_fig_Kloomok_Muffley_2(R0_afgerond,beta_C,start_lift_C,end_lift_C,motionlaw_C);
 rho_min_D = gen_fig_Kloomok_Muffley_2(R0_afgerond,beta_D,start_lift_D,end_lift_D,motionlaw_D);
@@ -63,3 +64,4 @@ rho_min_E = gen_fig_Kloomok_Muffley_2(R0_afgerond,beta_E,start_lift_E,end_lift_E
 rho_min_F = gen_fig_Kloomok_Muffley_2(R0_afgerond,beta_F,start_lift_F,end_lift_F,motionlaw_F);
 
 rho_min = min([rho_min_A,rho_min_B,rho_min_C,rho_min_D,rho_min_E,rho_min_F])
+
