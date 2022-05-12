@@ -1,4 +1,4 @@
-clear; close all; clc
+ close all; clc;clear;
 
 out = load('Geometrie_e0.mat');
 
@@ -48,9 +48,15 @@ R_no_exc = sqrt(test.xpitch.^2 + test.ypitch.^2);%*10^(-3);
 P_e = N_tote.*(e*cos(alphae)+sin(alphae).*(sqrt(R0e^2-e^2)+Xe))*omega;
 P_av2 = mean(P_e)
 figure()
-plot(P_e)
-title("P_e")
-
+grid on
+plot(P_e,"linewidth",2)
+hold on
+plot(P_av2*ones(size(P_e)),"linewidth",2)
+hold off
+title("Power with eccentricity")
+xlabel("cam angle [deg]")
+ylabel("power [W]")
+legend("insanttaneous power","avarage power")
 
 M = P_e/omega;
 M_av = P_av2 ./ test.w
@@ -61,7 +67,8 @@ figure()
 plot(M,'b', "linewidth",2)
 hold on
 %plot(M_av*ones(size(M)),'r', "linewidth",2)
-plot([M_delta(17001:end),M_delta(1:17001-1)],'r', "linewidth",2)
+plot(M_av*ones(size(P_e)),"linewidth",2)
+%plot([M_delta(17001:end),M_delta(1:17001-1)],'r', "linewidth",2)
 
 legend('instantaneous Torque','avarage Torque')
 xlabel("cam angle (degree)")

@@ -66,6 +66,11 @@ R_0_30 = find(abs(alpha_max-30) == min(abs(alpha_max-30)),1)/10;
 
 figure;
 plot(R0_vec, alpha_max);
+hold on
+if max(alpha_max) > 30
+    plot(R_0_30,30,'ro')
+end
+hold off
 grid
 xlabel('R_0 (mm)')
 ylabel('alpha_{max} (degree)')

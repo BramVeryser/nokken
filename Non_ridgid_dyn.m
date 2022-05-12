@@ -75,9 +75,7 @@ gamma_dot_dot = diff(gamma',2)./Ts^2;
 gamma_dot_dot = [gamma_dot_dot,gamma_dot_dot(end),gamma_dot_dot(end)];
 
 verschil_single=gamma' - theta;
-figure()
-plot(tau(6001:8000),gamma(6001:8000))
-title("test")
+
 %figuur veschil
 figure()
 plot(tau(6000:8000),verschil_single(6000:8000))
@@ -142,7 +140,7 @@ min(N_tot_dynamica)
 %% multirise
 T = 2*pi/cam.w;
 lift = cam.S*0.001/0.03;
-
+grid on
 lift = repmat(lift,1,25);
 
 tau = (0:1:899999)*25/900000;
@@ -157,27 +155,34 @@ gamma_multi_ss = gamma_multi(864001:900000)';
 gamma_dot_dot_ss = diff(gamma_multi_ss,2)/Ts^2;
 gamma_dot_dot_ss = [gamma_dot_dot_ss,gamma_dot_dot_ss(end),gamma_dot_dot_ss(end)];
 %Volledige cyclus
-plot(tau(864001:900000),gamma_multi(864001:900000))
-title("volledige cyclus")
-
+plot(tau(864001:900000),gamma_multi(864001:900000),"linewidth",1.7)
+grid on
+title("Full 20'th cycle \gamma")
+xlabel("\tau")
+ylabel("\gamma")
 %trillingen
 verschil_multi = gamma_multi'-lift;
 figure()
-plot(tau(864001:900000),verschil_multi(864001:900000))
-title("verschil multi")
-
+plot(tau(864001:900000),verschil_multi(864001:900000),"linewidth",1.7)
+title("Difference motion law and \gamma_{multi}")
+grid on
+xlabel("\tau")
+ylabel("\gamma - S")
 figure()
-plot(verschil_single)
+plot(verschil_single,"linewidth",1.7)
 hold on
-plot(verschil_multi(876000:884000))
-title("verschil singel/multi")
-
+plot(verschil_multi(876000:884000),"linewidth",1.7)
+legend("\gamma_{single} - S","\gamma_{multi} - S")
+title("Difference \gamma_{single} and \gamma_{multi} on critical rise")
+grid on
+xlabel("\tau")
+ylabel("\Delta\gamma")
 figure()
-plot(gamma)
+plot(gamma,"linewidth",1.7)
 hold on
-plot(gamma_multi(876000:884000))
+plot(gamma_multi(876000:884000),"linewidth",1.7)
 title("gamma/gammamulti")
-
+grid on
 %% Invloed kracht multi
 out = load('Geometrie_e.mat');
 
@@ -199,14 +204,24 @@ N_tot = (F_func + X*k_v +F_v+ m*(omega^2)*(A*10^-3))./cos(alpha);
 %N_tot_dynamica = N_tot(12000:20000)+(k_v*15*verschil_single)./cos(alpha(12000:20000));
 N_tot_dynamica = (F_func + gamma_multi_ss*30*k_v + F_v + m*(omega^2)*gamma_dot_dot_ss*30)./cos(alpha);
 figure()
-plot(N_tot)
+plot(N_tot,"linewidth",1.7)
+xlabel("cam angle [deg]")
+ylabel("N_{tot} [N]")
+title("Total normal force")
 hold on
-plot(N_tot_dynamica)
+plot(N_tot_dynamica,"linewidth",1.7)
+legend("N(S)","N(\gamma)")
 % 
 % figure()
 % plot(N_tot_dynamica-N_tot)
-
-min(N_tot_dynamica)
+% figure()
+% plot(gamma_dot_dot_ss, "linewidth",1.7)
+% title("Acceleration \gamma")
+% grid on
+% 
+% xlabel("\tau")
+% ylabel("d^2\gamma/d\tau^2")
+% min(N_tot_dynamica)
 
 % figure()
 % plot(tau(12001:18000),gamma(1:6000))

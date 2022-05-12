@@ -1,7 +1,7 @@
-I_nodig = 14.36;
+I_nodig = 29.26;
 rho = 7800;
-R_i = 40e-2;
-R_o = 45e-2;
+R_i = 50e-2;
+R_o = 55e-2;
 R_m = 1/2*(R_i+R_o);
 t= 5e-2;
 m = I_nodig/R_m^2;
